@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "hpn-hider",
+  "version": "0.2",
+  "content_scripts": [
+    {
+      "matches": ["https://forums.hipinion.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "permissions": ["storage"]
+}

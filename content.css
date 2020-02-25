@@ -1,0 +1,81 @@
+ul.topiclist li {
+  position: relative;
+}
+
+.hide-button {
+  border: none;
+  font-weight: bold;
+  position: absolute;
+  background: none;
+  border-radius: 1px;
+  cursor: pointer;
+  display: initial;
+  line-height: 0;
+  padding: 0;
+  padding: 8px 4px;
+  right: 0;
+  top: -1px;
+  display: none;
+  color: #4c5d77;
+}
+
+.hidden-threads-button {
+  position: absolute;
+  right: 0;
+  background: no-repeat;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 6px;
+  font-size: 10px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.hidden-threads-panel {
+  position: absolute;
+  right: 0;
+  top: 24px;
+  padding: 32px;
+  border: 1px solid #00608f;
+  background: #ecf3f7;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.hidden-threads-panel li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.hidden-threads-panel__remove-button {
+  background: none;
+  color: #00608f;
+  margin-left: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden-threads-panel__remove-button:hover {
+  text-decoration: underline;
+}
+
+.hide-button:hover {
+  background: #ccc;
+}
+
+ul.topiclist li:hover .hide-button {
+  display: initial;
+}
+
+ul.topiclist li.hidden {
+  display: none;
+}
+
+div.forumbg.hidden {
+  opacity: 0;
+}
+
+div.forumbg {
+  position: relative;
+}
